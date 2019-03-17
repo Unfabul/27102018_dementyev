@@ -1,9 +1,9 @@
 <?php 
-    $cssFiles = [
-        '/css/style.css',
-        '/css/catalog.css'
-    ];
+    $cssFiles = [];
     include($_SERVER['DOCUMENT_ROOT'].'/parts/header.php'); 
+?>
+
+<?php
     require_once($_SERVER['DOCUMENT_ROOT'].'/config/config.php');
 
     if(isset($_GET['id'])){
@@ -27,5 +27,8 @@
             ";
         }
     }
+?>
 
-    include($_SERVER['DOCUMENT_ROOT'].'/parts/footer.php');
+<?php 
+    include($_SERVER['DOCUMENT_ROOT'].'/parts/footer.php'); 
+?>
