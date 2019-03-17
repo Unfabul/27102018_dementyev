@@ -1,0 +1,12 @@
+.collections{
+    display: flex;
+    flex-direction: column;
+}
+.collections__item{
+    color: black;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+.collections-active{
+    text-decoration: underline;
+}

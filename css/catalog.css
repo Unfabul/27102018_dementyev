@@ -1,0 +1,18 @@
+@import url("blocks/wrapper.css");
+@import url("blocks/header/header.css");
+@import url("blocks/header/logo.css");
+@import url("blocks/header/navigation.css");
+@import url("blocks/header/user-info.css");
+@import url("blocks/header/basket.css");
+@import url("blocks/catalog/catalog.css");
+@import url("blocks/catalog/product.css");
+@import url("blocks/footer/footer.css");
+@import url("blocks/footer/collections.css");
+@import url("blocks/footer/about.css");
+@import url("blocks/footer/social.css");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/*# sourceMappingURL=catalog.css.map */
