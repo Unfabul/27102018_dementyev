@@ -1,0 +1,186 @@
+.container{
+    display: flex;
+    width: 100%;
+    height: 1000px;
+    margin-bottom: 200px;
+}
+
+.row{
+    flex-direction: column;
+    width: 25%;
+}
+
+.item{
+    width: 100%;
+    height: 33.3%;
+    text-align: center;
+}
+
+.item-big{
+    width: 100%;
+    height: 66.6%;
+    text-align: center;
+}
+
+.belt{
+    background: url(/images/5.jpg) center center / cover no-repeat;
+}
+.shoes{
+    background: url(/images/3.jpg) center center / cover no-repeat;
+}
+.girl{
+    background: url(/images/6.jpg) center center / cover no-repeat;
+    display: flex;
+}
+.girl__text{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+.girl-text{
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.girl-price{
+    font-size: 20px;
+    font-style: italic;
+}
+.kids{
+    background: url(/images/4.jpg) center center / cover no-repeat;
+    display: flex;
+}
+.kids__text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+}
+.kids-text{
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.kids-text-2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.gray{
+    background-color: #727272;
+    display: flex;
+}
+.accessories__text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+.gray-arrow{
+    background: url(/images/icons/icons8-left-filled-50.png) center center / cover no-repeat;
+    height: 14px;
+    width: 36px;
+    margin-bottom: 10px;
+}
+.accessories-text{
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.shoes__text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+.shoes-text{
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.shoes-text-2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.jacket{
+    background: url(/images/1.jpg) center center / cover no-repeat;
+    display: flex;
+}
+.jacket__text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+}
+.jacket-text{
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.jacket-text-2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.jeans{
+    background: url(/images/2.jpg) center center / cover no-repeat;
+    display: flex;
+}
+.jeans__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+}
+.jeans-text{
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.jeans-price{
+    font-size: 20px;
+    font-style: italic;
+}
+.light-grey{
+    background-color: #b4b4b4;
+    display: flex;
+    justify-content: center;
+}
+.light-grey__text{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+.light-grey-box{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.light-grey__img{
+    background: url(/images/icons/attention-sign-outline.png) center center / cover no-repeat;
+    height: 30px;
+    width: 30px;
+}
+.light-grey__line{
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    margin: 0 10px;
+}
+.light-grey-text{
+    font-size: 18px;
+    font-style: italic;
+}

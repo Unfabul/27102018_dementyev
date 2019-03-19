@@ -1,6 +1,6 @@
 <?php 
     $cssFiles = [
-        '/css/catalog.css'
+        '/css/product.css'
     ];
     include($_SERVER['DOCUMENT_ROOT'].'/parts/header.php'); 
 ?>
@@ -42,27 +42,38 @@
             $template['sizes'][] = $row;
         }
 
-        echo "<pre>";
-        print_r( $template['sizes'] );
-        echo "</pre>";
+        // echo "<pre>";
+        // print_r( $template['sizes'] );
+        // echo "</pre>";
     }
 ?>
+<main>
+    <div class="product">
+        <div class='product__img' style='background-image:url(<?=$template['product']['photo']?>)'></div>
 
-<div class="product">
-    <h1><?=$template['product']['name']?></h1>
-    <div class="product__article"><?=$template['product']['sku']?></div>
-    <img class="product__img" src='<?=$template['product']['photo']?>'>
-    <div class="product__description"><?=$template['product']['description']?></div>
-    <?php
-        $price = $template['product']['price'] - $template['product']['price'] * $template['product']['sale'];
-    ?>
-    <div class="product__price"><?=$price?></div>
-</div>
-<div>
-    <?php foreach($template['sizes'] as $size): ?>
-        <span><?=$size['size']?></span>
-    <?php endforeach; ?>
-</div>
+        <h1 class='product__header'><?=$template['product']['name']?></h1>
+        <div class="product__article">Артикул: <?=$template['product']['sku']?></div>
+        
+        <?php
+            $price = $template['product']['price'] - $template['product']['price'] * $template['product']['sale'];
+        ?>
+        <div class="product__price"><?=$price?> руб.</div>
+
+        <div class="product__description"><?=$template['product']['description']?></div>
+        
+    </div>
+    <div class='sizes'>
+        <p class='sizes__header'>Размер</p>
+        <div class="sizes__size">
+        <?php foreach($template['sizes'] as $size): ?>
+            <div class='size'><span><?=$size['size']?></span></div>
+        <?php endforeach; ?>
+        </div>
+    </div>
+    <div class="cart">
+        <div class="cart__button">Добавить в корзину</div>
+    </div>
+</main>
 <?php 
     include($_SERVER['DOCUMENT_ROOT'].'/parts/footer.php'); 
 ?>

@@ -3,3 +3,7 @@
     align-items: center;
     padding: 40px 0;
 }
+hr{
+    height: 1px;
+    background-color: gray;
+}
