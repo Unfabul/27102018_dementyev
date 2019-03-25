@@ -33,7 +33,7 @@
         <div class="basket">
             <div class="basket__pic"></div>
             <div class="basket__text">
-                Корзина(5)
+                Корзина(<span>0</span>)
             </div>
         </div>
     </header>
