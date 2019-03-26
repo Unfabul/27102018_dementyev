@@ -1,11 +1,13 @@
 <?php
-    // $pageConfig = [
-    //     'title' => 'Корзина',
-    //     'cssFiles' => [],
-    //     'jsFiles' => [
-    //         '/js/script.js'
-    //     ]
-    // ];
+    $pageConfig = [
+        'title' => 'Корзина',
+        'cssFiles' => [
+            '/css/dist/main.css'
+        ],
+        'jsFiles' => [
+            '/js/script.js'
+        ]
+    ];
     include($_SERVER['DOCUMENT_ROOT'].'/parts/header.php');
 
     session_start();
