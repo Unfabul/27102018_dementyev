@@ -78,9 +78,8 @@
         </div>
     </div>
     <div class="cart">
-        <div class="cart__button">Добавить в корзину</div>
+        <button class='add-to-basket cart__button' data-product-id='<?=$template['product']['id']?>'>Добавить в корзину</button>
     </div>
-    <button class='add-to-basket' data-product-id='<?=$template['product']['id']?>'>Добавить в корзину</button>
 </main>
 
 <?php 
