@@ -1,6 +1,13 @@
 <?php 
-    $cssFiles = [
-        '/css/dist/catalog.css'
+    $pageConfig = [
+        'title' => 'Каталог',
+        'cssFiles' => [
+            '/css/dist/catalog.css'
+        ],
+        'jsFiles' => [
+            '/js/script.js',
+            '/js/catalog.js'
+        ]
     ];
     include($_SERVER['DOCUMENT_ROOT'].'/parts/header.php'); 
 ?>
@@ -15,9 +22,6 @@
             <div class="pagination"></div>
         </section>
     </main>
-
-<script src="/js/catalog.js"></script>
-
 
 <?php 
     include($_SERVER['DOCUMENT_ROOT'].'/parts/footer.php'); 

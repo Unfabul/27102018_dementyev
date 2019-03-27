@@ -1,6 +1,13 @@
 <?php 
-    $cssFiles = [
-        '/css/dist/product.css'
+    $pageConfig = [
+        'title' => 'Карточка товара',
+        'cssFiles' => [
+            '/css/dist/product.css'
+        ],
+        'jsFiles' => [
+            '/js/script.js',
+            '/js/product.js'
+        ]
     ];
     include($_SERVER['DOCUMENT_ROOT'].'/parts/header.php'); 
 ?>
@@ -71,11 +78,10 @@
         </div>
     </div>
     <div class="cart">
-        <div class="cart__button">Добавить в корзину</div>
+        <button class='add-to-basket cart__button' data-product-id='<?=$template['product']['id']?>'>Добавить в корзину</button>
     </div>
-    <button class='add-to-basket' data-product-id='<?=$template['product']['id']?>'>Добавить в корзину</button>
 </main>
-<script src="/js/product.js"></script>
+
 <?php 
     include($_SERVER['DOCUMENT_ROOT'].'/parts/footer.php'); 
 ?>

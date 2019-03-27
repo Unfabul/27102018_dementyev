@@ -1,0 +1,40 @@
+.basket__img{
+    width: 100%;
+    min-height: 100px;
+    width: 100px;
+    background: center center / contain no-repeat;
+}
+.basket{
+    display: flex;
+    justify-content: space-between;
+}
+.basket__name{
+    width: 20%;
+}
+.basket__count{
+    width: 5%;
+}
+.basket__price{
+    width: 10%;
+}
+.basket-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.photo{
+    width: 100px;
+    text-align: center;
+}
+.name{
+    width: 20%;
+}
+.count{
+    width: 5%;
+}
+.price{
+    width: 10%;
+}
+.main{
+    margin-bottom: 100px;
+}
