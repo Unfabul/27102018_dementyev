@@ -18,12 +18,16 @@
     ];
 
     foreach($_SESSION['basket'] as $basketItem){
+
         $sql = "SELECT * FROM products WHERE id = {$basketItem['id']}";
         $result = mysqli_query($db, $sql);
         $product = mysqli_fetch_assoc($result);
 
         $product['count'] = $basketItem['count'];
+        $product['price_sale'] = ($product['price'] - $product['price'] * $product['sale']) * $product['count'];
 
+        // пример дебага
+        //_p($product);
         $template['products'][] = $product;
     }
 ?>
@@ -43,9 +47,11 @@
             <div class="basket__name"><?=$productItem['name']?></div>
             <div class="basket__count"><?=$productItem['count']?></div>
             <?php
-                $price = ($productItem['price'] - $productItem['price'] * $productItem['sale']) * $productItem['count'];
+                // лучше перенести расчет вверх
+                //$price = ($productItem['price'] - $productItem['price'] * $productItem['sale']) * $productItem['count'];
             ?>
-            <div class="basket__price"><?=$price?> руб.</div>
+            <?/*?><div class="basket__price"><?=$price?> руб.</div><?*/?>
+            <div class="basket__price"><?=$productItem['price_sale']?> руб.</div>
         </div>
         <?php endforeach; ?>
     
